@@ -1,14 +1,15 @@
 <template>
-  <h1>Gestor de Tareas</h1>
+  <h1>Gestor de Tareas (TypeScript)</h1>
   <TaskList />
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import TaskList from "./components/TaskList.vue";
 
-export default {
+export default defineComponent({
   components: { TaskList }
-};
+});
 </script>
 
 <style>
